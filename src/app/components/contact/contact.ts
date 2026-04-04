@@ -46,7 +46,7 @@ import { NgOptimizedImage } from '@angular/common';
           <a
             href="https://www.linkedin.com/in/lasserrearnaud/"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             class="social-card social-card--linkedin"
             aria-label="LinkedIn">
             <div class="social-icon">
@@ -67,7 +67,7 @@ import { NgOptimizedImage } from '@angular/common';
           <a
             href="https://www.malt.fr/profile/arnaudlasserre1"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             class="social-card social-card--malt"
             aria-label="Malt">
             <div class="social-icon social-icon--malt">
@@ -86,15 +86,13 @@ import { NgOptimizedImage } from '@angular/common';
 
         <!-- Footer note -->
         <p class="contact-note">
-          🔒 Vos informations restent confidentielles et ne sont jamais partagées.
+          Basé à Toulouse · Disponible en remote et déplacements
         </p>
 
       </div>
     </section>
   `,
   styles: [`
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500&display=swap');
-
     :host {
       --accent: #2563eb;
       --accent-light: #3b82f6;

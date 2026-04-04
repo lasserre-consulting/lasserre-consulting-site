@@ -63,8 +63,6 @@ import { NgOptimizedImage } from '@angular/common';
             <!-- "A" crossbar -->
             <line x1="-7" y1="4" x2="7" y2="4" stroke="url(#blueGrad)" stroke-width="1.8" stroke-linecap="round"/>
 
-            <!-- "L" vertical -->
-            <line x1="0" y1="-14" x2="0" y2="14" stroke="url(#accentGrad)" stroke-width="2.2" stroke-linecap="round" opacity="0"/>
 
             <!-- Corner dots at diamond tips -->
             <circle cx="0"  cy="-36" r="2.2" fill="#3b82f6"/>
@@ -176,8 +174,6 @@ import { NgOptimizedImage } from '@angular/common';
     </section>
   `,
   styles: [`
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@300;400;500&display=swap');
-
     :host {
       --accent: #3b82f6;
       --accent-dark: #2563eb;
@@ -524,8 +520,7 @@ export default class Presentation {
     'Consultant Freelance',
   ];
 
-  description = `9 ans d'expérience en développement logiciel. Spécialisé Java / Angular,
-    architecture performante, accompagnement technique et delivery orienté valeur.`;
+  description = `Freelance senior. J'interviens sur vos projets Java / Angular en tant que développeur ou Tech Lead — architecture, qualité de code, delivery. 10 ans d'expérience.`;
 
   particles = Array.from({ length: 40 }, () => ({
     style: `
