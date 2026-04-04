@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   template: `
     <section class="about-section">
       <div class="about-container">
@@ -14,7 +13,7 @@ import { CommonModule } from '@angular/common';
           <span class="about-label">À propos</span>
           <h2 class="about-title">Mon parcours</h2>
           <p class="about-intro">
-            Après 5 ans en tant que consultant et 4 ans chez client final,
+            Après 5 ans chez client final et 4 ans en tant que consultant,
             je poursuis aujourd'hui mon activité en freelance. Je privilégie
             les missions longues basées sur la performance, la transparence
             et l'exigence technique.
@@ -23,46 +22,49 @@ import { CommonModule } from '@angular/common';
 
         <!-- Stats -->
         <div class="stats-grid">
-          <div class="stat-card" *ngFor="let stat of stats">
-            <span class="stat-value">{{ stat.value }}</span>
-            <span class="stat-label">{{ stat.label }}</span>
-          </div>
+          @for (stat of stats; track stat.label) {
+            <div class="stat-card">
+              <span class="stat-value">{{ stat.value }}</span>
+              <span class="stat-label">{{ stat.label }}</span>
+            </div>
+          }
         </div>
 
         <!-- Timeline -->
         <div class="timeline">
-          <div
-            class="timeline-item"
-            *ngFor="let item of timeline; let i = index"
-            [class.timeline-item--right]="i % 2 !== 0"
-          >
-            <div class="timeline-content">
-              <div class="timeline-meta">
-                <span class="timeline-period">{{ item.period }}</span>
-                <span class="timeline-tag">{{ item.tag }}</span>
+          @for (item of timeline; track item.period; let i = $index) {
+            <div
+              class="timeline-item"
+              [class.timeline-item--right]="i % 2 !== 0"
+            >
+              <div class="timeline-content">
+                <div class="timeline-meta">
+                  <span class="timeline-period">{{ item.period }}</span>
+                  <span class="timeline-tag">{{ item.tag }}</span>
+                </div>
+                <h3 class="timeline-title">{{ item.title }}</h3>
+                <p class="timeline-desc">{{ item.description }}</p>
               </div>
-              <h3 class="timeline-title">{{ item.title }}</h3>
-              <p class="timeline-desc">{{ item.description }}</p>
+              <div class="timeline-dot"></div>
             </div>
-            <div class="timeline-dot"></div>
-          </div>
+          }
         </div>
 
         <!-- Values -->
         <div class="values-grid">
-          <div class="value-item" *ngFor="let value of values">
-            <div class="value-icon" [innerHTML]="value.icon"></div>
-            <h4 class="value-title">{{ value.title }}</h4>
-            <p class="value-desc">{{ value.description }}</p>
-          </div>
+          @for (value of values; track value.title) {
+            <div class="value-item">
+              <div class="value-icon" [innerHTML]="value.icon"></div>
+              <h4 class="value-title">{{ value.title }}</h4>
+              <p class="value-desc">{{ value.description }}</p>
+            </div>
+          }
         </div>
 
       </div>
     </section>
   `,
   styles: [`
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500&display=swap');
-
     :host {
       --accent: #2563eb;
       --accent-light: #3b82f6;
@@ -349,8 +351,8 @@ import { CommonModule } from '@angular/common';
 })
 export class About {
   stats = [
-    { value: '9 ans', label: "d'expérience en développement" },
-    { value: 'Priorité',   label: 'sur les bonnes pratiques' },
+    { value: '10 ans', label: "d'expérience en développement" },
+    { value: '40+',   label: 'projets livrés' },
     { value: '100%',  label: 'Fullstack pratiqué' },
   ];
 

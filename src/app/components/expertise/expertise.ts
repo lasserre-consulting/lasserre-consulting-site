@@ -1,50 +1,50 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-expertise',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   template: `
     <section id="expertise" class="expertise-section">
       <div class="expertise-container">
 
         <span class="section-badge">Expertise</span>
         <h2 class="section-title">Ce que j'apporte à vos projets</h2>
-        <p class="section-subtitle">Une combinaison rare de vision technique, de leadership et de delivery.</p>
+        <p class="section-subtitle">Vision technique, leadership et delivery orienté valeur produit.</p>
 
         <div class="cards">
-          <div
-            class="card"
-            *ngFor="let item of expertises"
-            [style.--accent]="item.color">
+          @for (item of expertises; track item.index) {
+            <div
+              class="card"
+              [style.--accent]="item.color">
 
-            <!-- Numbered index -->
-            <span class="card-index">{{ item.index }}</span>
+              <!-- Numbered index -->
+              <span class="card-index">{{ item.index }}</span>
 
-            <!-- Icon -->
-            <div class="card-icon" [innerHTML]="item.icon"></div>
+              <!-- Icon -->
+              <div class="card-icon" [innerHTML]="item.icon"></div>
 
-            <!-- Content -->
-            <h3 class="card-title">{{ item.title }}</h3>
-            <p class="card-desc">{{ item.description }}</p>
+              <!-- Content -->
+              <h3 class="card-title">{{ item.title }}</h3>
+              <p class="card-desc">{{ item.description }}</p>
 
-            <!-- Tags -->
-            <div class="card-tags">
-              <span class="tag" *ngFor="let tag of item.tags">{{ tag }}</span>
+              <!-- Tags -->
+              <div class="card-tags">
+                @for (tag of item.tags; track tag) {
+                  <span class="tag">{{ tag }}</span>
+                }
+              </div>
+
+              <!-- Hover glow -->
+              <div class="card-glow"></div>
             </div>
-
-            <!-- Hover glow -->
-            <div class="card-glow"></div>
-          </div>
+          }
         </div>
 
       </div>
     </section>
   `,
   styles: [`
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500&display=swap');
-
     :host {
       --text-primary: #0f172a;
       --text-secondary: #64748b;
@@ -231,6 +231,10 @@ import { CommonModule } from '@angular/common';
 
     /* ── Responsive ── */
     @media (max-width: 768px) {
+      .cards { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 540px) {
       .cards { grid-template-columns: 1fr; }
     }
 
@@ -251,7 +255,7 @@ export class Expertise {
         <polyline points="16 18 22 12 16 6"/>
         <polyline points="8 6 2 12 8 18"/>
       </svg>`,
-      tags: ['Java', 'Spring Boot', 'Angular', 'TypeScript', 'REST API'],
+      tags: ['Java', 'Kotlin', 'Spring Boot', 'Angular', 'TypeScript', 'REST API'],
     },
     {
       index: '02',

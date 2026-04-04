@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-stack',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   template: `
     <section class="stack-section">
       <div class="stack-container">
@@ -14,19 +13,22 @@ import { CommonModule } from '@angular/common';
         <p class="section-subtitle">Des technologies éprouvées pour des architectures robustes et scalables.</p>
 
         <div class="categories">
-          <div class="category" *ngFor="let category of categories">
-            <h3 class="category-title">{{ category.label }}</h3>
-            <div class="tech-grid">
-              <div
-                class="tech-card"
-                *ngFor="let tech of category.techs"
-                [style.--accent]="tech.color">
-                <div class="tech-icon" [innerHTML]="tech.icon"></div>
-                <span class="tech-name">{{ tech.name }}</span>
-                <div class="tech-glow"></div>
+          @for (category of categories; track category.label) {
+            <div class="category">
+              <h3 class="category-title">{{ category.label }}</h3>
+              <div class="tech-grid">
+                @for (tech of category.techs; track tech.name) {
+                  <div
+                    class="tech-card"
+                    [style.--accent]="tech.color">
+                    <div class="tech-icon" [innerHTML]="tech.icon"></div>
+                    <span class="tech-name">{{ tech.name }}</span>
+                    <div class="tech-glow"></div>
+                  </div>
+                }
               </div>
             </div>
-          </div>
+          }
         </div>
 
       </div>
@@ -201,9 +203,14 @@ export class Stack {
       label: 'Backend',
       techs: [
         {
-          name: 'Java',
+          name: 'Java (6-25)',
           color: '#f89820',
           icon: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149M8.276 15.933s-1.028.761.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389.987.602-5.679 1.661-12.007.13-7.942-1.218M13.116 11.475c1.158 1.333-.304 2.533-.304 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.688 0-.001-8.216 2.051-4.292 6.573" fill="#f89820"/><path d="M19.33 20.504s.679.559-.747.991c-2.712.822-11.288 1.069-13.669.033-.856-.373.749-.891 1.254-.999.526-.114.828-.093.828-.093-.953-.671-6.156 1.317-2.643 1.887 9.58 1.553 17.462-.7 14.977-1.819M9.292 13.21s-4.362 1.036-1.544 1.412c1.189.159 3.561.123 5.77-.062 1.806-.152 3.618-.477 3.618-.477s-.637.272-1.098.587c-4.429 1.165-12.986.623-10.522-.568 2.082-1.006 3.776-.892 3.776-.892M17.116 17.584c4.503-2.34 2.421-4.589.968-4.285-.355.074-.515.138-.515.138s.132-.207.385-.297c2.875-1.011 5.086 2.981-.928 4.562 0-.001.07-.062.09-.118M14.401 0s2.494 2.494-2.365 6.33c-3.896 3.077-.888 4.832-.001 6.836-2.274-2.053-3.943-3.858-2.824-5.539 1.644-2.469 6.197-3.665 5.19-7.627" fill="#f89820"/><path d="M9.734 23.924c4.322.277 10.959-.153 11.116-2.198 0 0-.302.775-3.572 1.391-3.688.694-8.239.613-10.937.168 0-.001.553.457 3.393.639" fill="#f89820"/></svg>`
+        },
+        {
+          name: 'Kotlin',
+          color: '#7f52ff',
+          icon: `<svg viewBox="0 0 24 24" fill="#7f52ff" xmlns="http://www.w3.org/2000/svg"><path d="M24 24H0V0h24L12 12z"/></svg>`
         },
         {
           name: 'Spring Boot',
@@ -258,17 +265,12 @@ export class Stack {
       ]
     },
     {
-      label: 'IA & Automatisation',
+      label: 'IA & Outillage',
       techs: [
         {
           name: 'Claude',
           color: '#cc785c',
-          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="#cc785c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/><path d="M8 12h8M12 8l4 4-4 4"/></svg>`
-        },
-        {
-          name: 'ChatGPT',
-          color: '#10a37f',
-          icon: `<svg viewBox="0 0 24 24" fill="#10a37f" xmlns="http://www.w3.org/2000/svg"><path d="M22.282 9.821a5.985 5.985 0 0 0-.516-4.91 6.046 6.046 0 0 0-6.51-2.9A6.065 6.065 0 0 0 4.981 4.18a5.985 5.985 0 0 0-3.998 2.9 6.046 6.046 0 0 0 .743 7.097 5.98 5.98 0 0 0 .51 4.911 6.051 6.051 0 0 0 6.515 2.9A5.985 5.985 0 0 0 13.26 24a6.056 6.056 0 0 0 5.772-4.206 5.99 5.99 0 0 0 3.997-2.9 6.056 6.056 0 0 0-.747-7.073zM13.26 22.43a4.476 4.476 0 0 1-2.876-1.04l.141-.081 4.779-2.758a.795.795 0 0 0 .392-.681v-6.737l2.02 1.168a.071.071 0 0 1 .038.052v5.583a4.504 4.504 0 0 1-4.494 4.494zM3.6 18.304a4.47 4.47 0 0 1-.535-3.014l.142.085 4.783 2.759a.771.771 0 0 0 .78 0l5.843-3.369v2.332a.08.08 0 0 1-.033.062L9.74 19.95a4.5 4.5 0 0 1-6.14-1.646zM2.34 7.896a4.485 4.485 0 0 1 2.366-1.973V11.6a.766.766 0 0 0 .388.676l5.815 3.355-2.02 1.168a.076.076 0 0 1-.071 0L4.01 14.032A4.505 4.505 0 0 1 2.34 7.896zm16.597 3.855l-5.843-3.368 2.019-1.164a.076.076 0 0 1 .071 0l4.815 2.778a4.504 4.504 0 0 1-.67 8.127V12.56a.786.786 0 0 0-.392-.81zm2.01-3.023l-.141-.085-4.774-2.782a.776.776 0 0 0-.785 0L9.409 9.23V6.897a.066.066 0 0 1 .028-.061l4.814-2.772a4.5 4.5 0 0 1 6.68 4.66zm-12.64 4.135l-2.02-1.164a.08.08 0 0 1-.038-.057V6.075a4.5 4.5 0 0 1 7.375-3.453l-.142.08L8.704 5.46a.795.795 0 0 0-.393.681zm1.097-2.365l2.602-1.5 2.607 1.5v2.999l-2.597 1.5-2.607-1.5z"/></svg>`
+          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="#cc785c" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="2.5" fill="#cc785c" stroke="none"/><line x1="12" y1="2" x2="12" y2="6.5"/><line x1="12" y1="17.5" x2="12" y2="22"/><line x1="2" y1="12" x2="6.5" y2="12"/><line x1="17.5" y1="12" x2="22" y2="12"/><line x1="5.22" y1="5.22" x2="8.46" y2="8.46"/><line x1="15.54" y1="15.54" x2="18.78" y2="18.78"/><line x1="18.78" y1="5.22" x2="15.54" y2="8.46"/><line x1="8.46" y1="15.54" x2="5.22" y2="18.78"/></svg>`
         },
         {
           name: 'Cursor',
