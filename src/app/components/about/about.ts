@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { SafeHtmlPipe } from '../../shared/safe-html.pipe';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [],
+  imports: [SafeHtmlPipe],
   template: `
     <section class="about-section">
       <div class="about-container">
@@ -54,7 +55,7 @@ import { Component } from '@angular/core';
         <div class="values-grid">
           @for (value of values; track value.title) {
             <div class="value-item">
-              <div class="value-icon" [innerHTML]="value.icon"></div>
+              <div class="value-icon" [innerHTML]="value.icon | safeHtml"></div>
               <h4 class="value-title">{{ value.title }}</h4>
               <p class="value-desc">{{ value.description }}</p>
             </div>

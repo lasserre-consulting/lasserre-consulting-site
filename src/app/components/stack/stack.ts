@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { SafeHtmlPipe } from '../../shared/safe-html.pipe';
 
 @Component({
   selector: 'app-stack',
   standalone: true,
-  imports: [],
+  imports: [SafeHtmlPipe],
   template: `
     <section class="stack-section">
       <div class="stack-container">
@@ -21,7 +22,7 @@ import { Component } from '@angular/core';
                   <div
                     class="tech-card"
                     [style.--accent]="tech.color">
-                    <div class="tech-icon" [innerHTML]="tech.icon"></div>
+                    <div class="tech-icon" [innerHTML]="tech.icon | safeHtml"></div>
                     <span class="tech-name">{{ tech.name }}</span>
                     <div class="tech-glow"></div>
                   </div>
