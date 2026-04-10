@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { SafeHtmlPipe } from '../../shared/safe-html.pipe';
 
 @Component({
   selector: 'app-expertise',
   standalone: true,
-  imports: [],
+  imports: [SafeHtmlPipe],
   template: `
     <section id="expertise" class="expertise-section">
       <div class="expertise-container">
@@ -22,7 +23,7 @@ import { Component } from '@angular/core';
               <span class="card-index">{{ item.index }}</span>
 
               <!-- Icon -->
-              <div class="card-icon" [innerHTML]="item.icon"></div>
+              <div class="card-icon" [innerHTML]="item.icon | safeHtml"></div>
 
               <!-- Content -->
               <h3 class="card-title">{{ item.title }}</h3>
