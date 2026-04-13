@@ -2,35 +2,21 @@ pipeline {
     agent any
 
     environment {
-        PROJECT_DIR = '/home/ubuntu/projects/lasserre-consulting-site'
-        WWW_DIR     = '/var/www/lasserre-consulting-site'
+        WWW_DIR = '/var/www/lasserre-consulting-site'
     }
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                dir("${PROJECT_DIR}") {
-                    sh 'git pull origin main'
-                }
-            }
-        }
-
         stage('Build') {
             steps {
-                dir("${PROJECT_DIR}") {
-                    sh 'rm -rf node_modules'
-                    sh 'npm ci'
-                    sh 'npx ng build --configuration production'
-                }
+                sh 'npm ci'
+                sh 'npx ng build --configuration production'
             }
         }
 
         stage('Lint') {
             steps {
-                dir("${PROJECT_DIR}") {
-                    sh 'npx ng lint'
-                }
+                sh 'npx ng lint'
             }
         }
 
@@ -43,8 +29,8 @@ pipeline {
                     fi
                     rm -rf "${WWW_DIR:?}/"*
                 '''
-                sh "cp -r ${PROJECT_DIR}/dist/lasserre-consulting-site/browser/fr ${WWW_DIR}/"
-                sh "cp -r ${PROJECT_DIR}/dist/lasserre-consulting-site/browser/en ${WWW_DIR}/"
+                sh "cp -r ${WORKSPACE}/dist/lasserre-consulting-site/browser/fr ${WWW_DIR}/"
+                sh "cp -r ${WORKSPACE}/dist/lasserre-consulting-site/browser/en ${WWW_DIR}/"
             }
         }
 
