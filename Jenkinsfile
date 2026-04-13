@@ -19,6 +19,7 @@ pipeline {
         stage('Build') {
             steps {
                 dir("${PROJECT_DIR}") {
+                    sh 'rm -rf node_modules'
                     sh 'npm ci'
                     sh 'npx ng build --configuration production'
                 }
