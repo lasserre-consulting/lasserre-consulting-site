@@ -1,0 +1,7 @@
+services:
+  frontend:
+    build: .
+    container_name: lasserre-consulting-site
+    ports:
+      - "4200:80"
+    restart: unless-stopped
