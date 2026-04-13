@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject, LOCALE_ID } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 
 @Component({
@@ -11,6 +11,10 @@ import { NgOptimizedImage } from '@angular/common';
 export default class Presentation {
 
   name = 'Arnaud Lasserre';
+
+  pdfHref = inject(LOCALE_ID) === 'en'
+    ? '/pdf/dossier-competence-en.pdf'
+    : '/pdf/dossier-competence.pdf';
 
   roles = [
     $localize`:@@presentation.role.fullstack:Développeur Fullstack Senior`,
