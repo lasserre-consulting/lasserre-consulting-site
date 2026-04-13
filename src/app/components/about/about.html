@@ -1,0 +1,58 @@
+<section class="about-section">
+  <div class="about-container">
+
+    <!-- Header -->
+    <div class="about-header">
+      <span class="about-label">À propos</span>
+      <h2 class="about-title">Mon parcours</h2>
+      <p class="about-intro">
+        Après 5 ans chez client final et 4 ans en tant que consultant,
+        je poursuis aujourd'hui mon activité en freelance. Je privilégie
+        les missions longues basées sur la performance, la transparence
+        et l'exigence technique.
+      </p>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-grid">
+      @for (stat of stats; track stat.label) {
+        <div class="stat-card">
+          <span class="stat-value">{{ stat.value }}</span>
+          <span class="stat-label">{{ stat.label }}</span>
+        </div>
+      }
+    </div>
+
+    <!-- Timeline -->
+    <div class="timeline">
+      @for (item of timeline; track item.period; let i = $index) {
+        <div
+          class="timeline-item"
+          [class.timeline-item--right]="i % 2 !== 0"
+        >
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-period">{{ item.period }}</span>
+              <span class="timeline-tag">{{ item.tag }}</span>
+            </div>
+            <h3 class="timeline-title">{{ item.title }}</h3>
+            <p class="timeline-desc">{{ item.description }}</p>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+      }
+    </div>
+
+    <!-- Values -->
+    <div class="values-grid">
+      @for (value of values; track value.title) {
+        <div class="value-item">
+          <div class="value-icon" [innerHTML]="value.icon | safeHtml"></div>
+          <h4 class="value-title">{{ value.title }}</h4>
+          <p class="value-desc">{{ value.description }}</p>
+        </div>
+      }
+    </div>
+
+  </div>
+</section>

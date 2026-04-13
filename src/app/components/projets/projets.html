@@ -1,0 +1,36 @@
+<section class="projets-section">
+  <div class="projets-container">
+
+    <span class="section-badge">Réalisations</span>
+    <h2 class="section-title">Projets personnels</h2>
+    <p class="section-subtitle">Des projets construits pour apprendre, expérimenter et résoudre de vrais problèmes.</p>
+
+    <div class="cards">
+      @for (projet of projets; track projet.title) {
+        <div
+          appScrollReveal
+          class="card"
+          [style.--accent]="projet.color">
+
+          <!-- Badge -->
+          <span class="projet-badge">projet personnel</span>
+
+          <!-- Content -->
+          <h3 class="card-title">{{ projet.title }}</h3>
+          <p class="card-desc">{{ projet.description }}</p>
+
+          <!-- Tags -->
+          <div class="card-tags">
+            @for (tag of projet.tags; track tag) {
+              <span class="tag">{{ tag }}</span>
+            }
+          </div>
+
+          <!-- Hover glow -->
+          <div class="card-glow"></div>
+        </div>
+      }
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,38 @@
+<section id="expertise" class="expertise-section">
+  <div class="expertise-container">
+
+    <span class="section-badge">Expertise</span>
+    <h2 class="section-title">Ce que j'apporte à vos projets</h2>
+    <p class="section-subtitle">Vision technique, leadership et delivery orienté valeur produit.</p>
+
+    <div class="cards">
+      @for (item of expertises; track item.index) {
+        <div
+          class="card"
+          [style.--accent]="item.color">
+
+          <!-- Numbered index -->
+          <span class="card-index">{{ item.index }}</span>
+
+          <!-- Icon -->
+          <div class="card-icon" [innerHTML]="item.icon | safeHtml"></div>
+
+          <!-- Content -->
+          <h3 class="card-title">{{ item.title }}</h3>
+          <p class="card-desc">{{ item.description }}</p>
+
+          <!-- Tags -->
+          <div class="card-tags">
+            @for (tag of item.tags; track tag) {
+              <span class="tag">{{ tag }}</span>
+            }
+          </div>
+
+          <!-- Hover glow -->
+          <div class="card-glow"></div>
+        </div>
+      }
+    </div>
+
+  </div>
+</section>

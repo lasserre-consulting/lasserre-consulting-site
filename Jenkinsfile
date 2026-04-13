@@ -25,6 +25,14 @@ pipeline {
             }
         }
 
+        stage('Lint') {
+            steps {
+                dir("${PROJECT_DIR}") {
+                    sh 'npx ng lint'
+                }
+            }
+        }
+
         stage('Deploy') {
             steps {
                 sh '''
