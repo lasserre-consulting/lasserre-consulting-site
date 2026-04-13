@@ -13,12 +13,12 @@ export default class Presentation {
   name = 'Arnaud Lasserre';
 
   roles = [
-    'Développeur Fullstack Senior',
-    'Tech Lead',
-    'Consultant Freelance',
+    $localize`:@@presentation.role.fullstack:Développeur Fullstack Senior`,
+    $localize`:@@presentation.role.techlead:Tech Lead`,
+    $localize`:@@presentation.role.freelance:Consultant Freelance`,
   ];
 
-  description = `Freelance senior. J'interviens sur vos projets Java / Angular en tant que développeur ou Tech Lead — architecture, qualité de code, delivery. 10 ans d'expérience.`;
+  description = $localize`:@@presentation.description:Freelance senior. J'interviens sur vos projets Java / Angular en tant que développeur ou Tech Lead — architecture, qualité de code, delivery. 10 ans d'expérience.`;
 
   particles = Array.from({ length: 40 }, () => ({
     style: `

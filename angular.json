@@ -13,12 +13,25 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": {
+          "code": "fr",
+          "baseHref": "/fr/"
+        },
+        "locales": {
+          "en": {
+            "translation": "src/locale/messages.en.xlf",
+            "baseHref": "/en/"
+          }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular/build:application",
           "options": {
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
+            "polyfills": ["@angular/localize/init"],
             "assets": [
               {
                 "glob": "**/*",
@@ -31,6 +44,7 @@
           },
           "configurations": {
             "production": {
+              "localize": ["fr", "en"],
               "budgets": [
                 {
                   "type": "initial",

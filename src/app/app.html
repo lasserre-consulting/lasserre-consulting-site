@@ -1,1 +1,8 @@
+<nav class="lang-switch" aria-label="Language">
+  @if (locale === 'fr') {
+    <a href="/en/" class="lang-btn" hreflang="en">EN</a>
+  } @else {
+    <a href="/fr/" class="lang-btn" hreflang="fr">FR</a>
+  }
+</nav>
 <router-outlet />

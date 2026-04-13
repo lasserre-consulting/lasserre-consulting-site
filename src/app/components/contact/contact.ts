@@ -11,6 +11,11 @@ import { NgOptimizedImage } from '@angular/common';
 export class Contact {
   copied = false;
 
+  readonly labelCopied  = $localize`:@@contact.copied:Copié !`;
+  readonly labelCopy    = $localize`:@@contact.copy:Copier l'adresse`;
+  readonly ariaLabelCopied = $localize`:@@contact.aria.copied:Adresse copiée`;
+  readonly ariaLabelCopy   = $localize`:@@contact.aria.copy:Copier l'adresse email`;
+
   copyEmail() {
     navigator.clipboard.writeText('contact@lasserre-consulting.fr').then(() => {
       this.copied = true;

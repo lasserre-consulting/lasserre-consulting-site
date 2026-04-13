@@ -7,11 +7,11 @@
   <div class="contact-container">
 
     <!-- Badge -->
-    <span class="contact-badge">Contact</span>
+    <span class="contact-badge" i18n="@@contact.badge">Contact</span>
 
     <!-- Title -->
-    <h2 class="contact-title">Travaillons ensemble</h2>
-    <p class="contact-subtitle">
+    <h2 class="contact-title" i18n="@@contact.title">Travaillons ensemble</h2>
+    <p class="contact-subtitle" i18n="@@contact.subtitle">
       Disponible pour missions longue durée.<br>
       Réponse sous <strong>24h</strong>.
     </p>
@@ -24,20 +24,20 @@
           <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
           <polyline points="22,6 12,13 2,6"/>
         </svg>
-        Me contacter
+        <ng-container i18n="@@contact.cta.mailto">Me contacter</ng-container>
       </a>
-      <button class="copy-button" (click)="copyEmail()" [attr.aria-label]="copied ? 'Adresse copiée' : 'Copier l\'adresse email'">
+      <button class="copy-button" (click)="copyEmail()" [attr.aria-label]="copied ? ariaLabelCopied : ariaLabelCopy">
         @if (copied) {
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="20 6 9 17 4 12"/>
           </svg>
-          Copié !
+          {{ labelCopied }}
         } @else {
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2 2v1"/>
           </svg>
-          Copier l'adresse
+          {{ labelCopy }}
         }
       </button>
     </div>
@@ -45,7 +45,7 @@
     <!-- Divider -->
     <div class="divider">
       <span class="divider-line"></span>
-      <span class="divider-text">ou retrouvez-moi sur</span>
+      <span class="divider-text" i18n="@@contact.divider">ou retrouvez-moi sur</span>
       <span class="divider-line"></span>
     </div>
 
@@ -93,7 +93,7 @@
     </div>
 
     <!-- Footer note -->
-    <p class="contact-note">
+    <p class="contact-note" i18n="@@contact.location">
       Basé à Toulouse · Disponible en remote et déplacements
     </p>
 

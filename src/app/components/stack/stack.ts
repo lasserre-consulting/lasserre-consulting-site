@@ -12,7 +12,7 @@ export class Stack {
 
   categories = [
     {
-      label: 'Backend',
+      label: $localize`:@@stack.category.backend:Backend`,
       techs: [
         {
           name: 'Java (6-25)',
@@ -37,7 +37,7 @@ export class Stack {
       ]
     },
     {
-      label: 'Frontend',
+      label: $localize`:@@stack.category.frontend:Frontend`,
       techs: [
         {
           name: 'Angular',
@@ -57,7 +57,7 @@ export class Stack {
       ]
     },
     {
-      label: 'DevOps & Cloud',
+      label: $localize`:@@stack.category.devops:DevOps & Cloud`,
       techs: [
         {
           name: 'Docker',
@@ -77,7 +77,7 @@ export class Stack {
       ]
     },
     {
-      label: 'IA & Outillage',
+      label: $localize`:@@stack.category.ai:IA & Outillage`,
       techs: [
         {
           name: 'Claude',

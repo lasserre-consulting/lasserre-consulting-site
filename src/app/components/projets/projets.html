@@ -1,9 +1,9 @@
 <section class="projets-section">
   <div class="projets-container">
 
-    <span class="section-badge">Réalisations</span>
-    <h2 class="section-title">Projets personnels</h2>
-    <p class="section-subtitle">Des projets construits pour apprendre, expérimenter et résoudre de vrais problèmes.</p>
+    <span class="section-badge" i18n="@@projets.badge">Réalisations</span>
+    <h2 class="section-title" i18n="@@projets.title">Projets personnels</h2>
+    <p class="section-subtitle" i18n="@@projets.subtitle">Des projets construits pour apprendre, expérimenter et résoudre de vrais problèmes.</p>
 
     <div class="cards">
       @for (projet of projets; track projet.title) {
@@ -13,7 +13,7 @@
           [style.--accent]="projet.color">
 
           <!-- Badge -->
-          <span class="projet-badge">projet personnel</span>
+          <span class="projet-badge" i18n="@@projets.card.badge">projet personnel</span>
 
           <!-- Content -->
           <h3 class="card-title">{{ projet.title }}</h3>

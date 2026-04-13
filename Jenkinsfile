@@ -42,7 +42,8 @@ pipeline {
                     fi
                     rm -rf "${WWW_DIR:?}/"*
                 '''
-                sh "cp -r ${PROJECT_DIR}/dist/lasserre-consulting-site/browser/* ${WWW_DIR}/"
+                sh "cp -r ${PROJECT_DIR}/dist/lasserre-consulting-site/browser/fr ${WWW_DIR}/"
+                sh "cp -r ${PROJECT_DIR}/dist/lasserre-consulting-site/browser/en ${WWW_DIR}/"
             }
         }
 

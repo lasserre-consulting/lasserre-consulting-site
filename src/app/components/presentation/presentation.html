@@ -17,7 +17,7 @@
     <!-- Availability badge -->
     <div class="availability-badge">
       <span class="availability-dot"></span>
-      Disponible pour de nouvelles missions
+      <ng-container i18n="@@presentation.available">Disponible pour de nouvelles missions</ng-container>
     </div>
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 140" width="200" height="140">
@@ -130,16 +130,15 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
         </svg>
-        Discutons de votre projet
+        <ng-container i18n="@@presentation.cta.discuss">Discutons de votre projet</ng-container>
       </a>
       <a href="#expertise" class="cta-secondary">
-        Voir mon expertise
+        <ng-container i18n="@@presentation.cta.expertise">Voir mon expertise</ng-container>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="12" y1="5" x2="12" y2="19"/>
           <polyline points="19 12 12 19 5 12"/>
         </svg>
       </a>
-      <!-- dans .hero-ctas, après le cta-secondary -->
       <a href="/pdf/dossier-competence.pdf"
          target="_blank"
          rel="noopener"
@@ -151,7 +150,7 @@
           <line x1="12" y1="18" x2="12" y2="12"/>
           <line x1="9" y1="15" x2="15" y2="15"/>
         </svg>
-        Dossier de compétences
+        <ng-container i18n="@@presentation.cta.pdf">Dossier de compétences</ng-container>
       </a>
     </div>
 

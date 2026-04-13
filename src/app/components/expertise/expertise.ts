@@ -14,8 +14,8 @@ export class Expertise {
     {
       index: '01',
       color: '#2563eb',
-      title: 'Développement Fullstack',
-      description: 'Conception et développement d\'applications robustes, scalables et maintenables de bout en bout — du backend Java / Spring Boot à l\'interface Angular.',
+      title: $localize`:@@expertise.fullstack.title:Développement Fullstack`,
+      description: $localize`:@@expertise.fullstack.desc:Conception et développement d'applications robustes, scalables et maintenables de bout en bout — du backend Java / Spring Boot à l'interface Angular.`,
       icon: `<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="16 18 22 12 16 6"/>
         <polyline points="8 6 2 12 8 18"/>
@@ -25,8 +25,8 @@ export class Expertise {
     {
       index: '02',
       color: '#7c3aed',
-      title: 'Tech Lead',
-      description: 'Définition de l\'architecture technique, animation des revues de code, montée en compétences de l\'équipe et alignement avec les enjeux produit.',
+      title: $localize`:@@expertise.techlead.title:Tech Lead`,
+      description: $localize`:@@expertise.techlead.desc:Définition de l'architecture technique, animation des revues de code, montée en compétences de l'équipe et alignement avec les enjeux produit.`,
       icon: `<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="12" cy="8" r="4"/>
         <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
@@ -37,8 +37,8 @@ export class Expertise {
     {
       index: '03',
       color: '#059669',
-      title: 'Agilité & Scrum',
-      description: 'Delivery structuré et orienté valeur produit. Animation des cérémonies, priorisation du backlog et pilotage par les indicateurs.',
+      title: $localize`:@@expertise.agile.title:Agilité & Scrum`,
+      description: $localize`:@@expertise.agile.desc:Delivery structuré et orienté valeur produit. Animation des cérémonies, priorisation du backlog et pilotage par les indicateurs.`,
       icon: `<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
         <path d="M12 22V12"/>
         <path d="M12 12L4.93 7"/>
