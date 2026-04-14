@@ -92,7 +92,7 @@
   opacity: 1;
 }
 
-.card:hover .card-icon svg {
+.card:hover .card-icon ::ng-deep svg {
   transform: scale(1.1);
 }
 
@@ -139,7 +139,7 @@
   margin-bottom: 1.25rem;
 }
 
-.card-icon svg {
+.card-icon ::ng-deep svg {
   width: 24px;
   height: 24px;
   stroke: var(--accent);

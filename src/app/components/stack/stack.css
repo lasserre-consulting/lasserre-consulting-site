@@ -144,7 +144,7 @@
   flex-shrink: 0;
 }
 
-.tech-icon svg { width: 22px; height: 22px; }
+.tech-icon ::ng-deep svg { width: 22px; height: 22px; }
 
 .tech-name {
   font-size: 0.88rem;

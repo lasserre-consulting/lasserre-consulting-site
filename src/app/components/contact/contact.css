@@ -236,6 +236,13 @@
   background: var(--malt);
 }
 
+.social-icon--malt img {
+  max-width: 70px;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
 .social-info {
   display: flex;
   flex-direction: column;

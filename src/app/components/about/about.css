@@ -224,7 +224,7 @@
   justify-content: center;
 }
 
-.value-icon svg {
+.value-icon ::ng-deep svg {
   width: 36px;
   height: 36px;
   stroke: var(--accent);
