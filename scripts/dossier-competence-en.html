@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ALA — Dossier de compétences 2025</title>
+  <title>ALA — Skills Portfolio 2025</title>
   <style>
     @page { size: A4; margin: 0; }
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -14,7 +14,6 @@
       background: white;
     }
 
-    /* ── PAGE ─────────────────────────────────────────── */
     .page {
       width: 210mm;
       min-height: 297mm;
@@ -23,7 +22,6 @@
     }
     .page:last-child { page-break-after: auto; }
 
-    /* ── PROFILE HEADER ───────────────────────────────── */
     .profile-header {
       display: flex;
       justify-content: space-between;
@@ -64,18 +62,16 @@
 
     .profile-content { padding: 9mm 18mm; }
 
-    /* ── ACCROCHE ─────────────────────────────────────── */
     .accroche {
       background: #f8fafc;
       border-left: 3px solid #2563eb;
       padding: 10px 14px;
-      margin-bottom: 16px;
+      margin-bottom: 8px;
       font-size: 10pt;
       line-height: 1.65;
       color: #334155;
     }
 
-    /* ── SECTION TITLE ────────────────────────────────── */
     .section { margin-bottom: 16px; }
     .section-title {
       font-size: 8pt;
@@ -88,7 +84,6 @@
       border-bottom: 1px solid #e2e8f0;
     }
 
-    /* ── FUNCTIONAL SKILLS ────────────────────────────── */
     .func-skills {
       counter-reset: item;
       display: grid;
@@ -118,7 +113,6 @@
       color: #334155;
     }
 
-    /* ── TECH GRID ────────────────────────────────────── */
     .tech-grid {
       display: grid;
       grid-template-columns: 1fr 2fr 0.9fr 1.1fr;
@@ -143,7 +137,6 @@
       font-size: 8.5pt;
     }
 
-    /* ── PROJECTS BOX ─────────────────────────────────── */
     .projects-box {
       background: #f1f5f9;
       border-left: 3px solid #2563eb;
@@ -159,7 +152,6 @@
     }
     .projects-box-content { font-size: 10pt; color: #334155; }
 
-    /* ── FORMATIONS ───────────────────────────────────── */
     .formation-list { display: flex; flex-direction: column; gap: 6px; }
     .formation-item {
       display: grid;
@@ -174,11 +166,9 @@
     }
     .formation-title { font-size: 10pt; color: #334155; }
 
-    /* ── LANGUES ──────────────────────────────────────── */
     .langues { font-size: 10pt; color: #334155; }
     .langues .lang-level { color: #94a3b8; }
 
-    /* ── EXPERIENCE HEADER ────────────────────────────── */
     .exp-header {
       background: #0f1c3f;
       color: white;
@@ -203,10 +193,8 @@
     }
     .exp-header-role .sep { margin: 0 7px; opacity: 0.45; }
 
-    /* ── EXPERIENCE CONTENT ───────────────────────────── */
     .exp-content { padding: 9mm 18mm; }
 
-    /* ── MISSION BLOCK (A4U sub-missions) ─────────────── */
     .mission-block {
       margin-bottom: 14px;
       padding-bottom: 14px;
@@ -231,7 +219,6 @@
       margin-bottom: 7px;
     }
 
-    /* ── RÉALISATIONS ─────────────────────────────────── */
     .realisations-list {
       list-style: none;
       display: flex;
@@ -254,7 +241,6 @@
       font-weight: 700;
     }
 
-    /* ── TECH TAGS ────────────────────────────────────── */
     .tags-container {
       display: flex;
       flex-wrap: wrap;
@@ -269,7 +255,6 @@
       border-radius: 3px;
     }
 
-    /* ── EXP META ─────────────────────────────────────── */
     .exp-meta {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -288,7 +273,6 @@
     }
     .exp-meta-value { font-size: 10pt; color: #334155; }
 
-    /* ── A4U INTRO ────────────────────────────────────── */
     .a4u-intro {
       font-size: 10pt;
       color: #334155;
@@ -298,7 +282,6 @@
       border-bottom: 1px solid #e2e8f0;
     }
 
-    /* ── SUITE HEADER (continuation page) ────────────── */
     .suite-header {
       background: #0f1c3f;
       color: white;
@@ -327,74 +310,71 @@
 <body>
 
 <!-- ══════════════════════════════════════════════════════
-     PAGE 1 — PROFIL
+     PAGE 1 — PROFILE
 ══════════════════════════════════════════════════════ -->
 <div class="page">
 
   <div class="profile-header">
     <div>
       <div class="profile-name">ALA</div>
-      <div class="profile-title">Tech Lead Fullstack</div>
+      <div class="profile-title">Fullstack Tech Lead</div>
     </div>
     <div class="experience-badge">
-      <span class="years">10 ans</span>
-      <span class="label">d'expérience</span>
+      <span class="years">10 yrs</span>
+      <span class="label">of experience</span>
     </div>
   </div>
 
   <div class="profile-content">
 
-    <!-- Accroche -->
     <div class="section">
       <div class="accroche">
-        Tech Lead Fullstack avec 10 ans d'expérience, j'interviens sur des projets Java&nbsp;/&nbsp;Angular
-        exigeants aussi bien comme développeur senior que comme leader technique. Habitué aux environnements
-        grands comptes (EDF, Airbus, CNAM, Ministère de l'Agriculture), je prends en charge l'architecture,
-        la qualité du code et le delivery de bout en bout. Disponible pour missions longues en freelance.
+        Fullstack Tech Lead with 10 years of experience, I work on demanding Java&nbsp;/&nbsp;Angular projects
+        as both a senior developer and technical leader. With a proven track record at major accounts
+        (EDF, Airbus, CNAM, Ministry of Agriculture), I take ownership of architecture, code quality
+        and end-to-end delivery. Available for long-term freelance assignments.
       </div>
       <div style="margin-top:8px; font-size:9pt; color:#2563eb; font-weight:600; letter-spacing:0.3px;">
-        Disponible depuis janvier 2026
+        Available from January 2026
       </div>
     </div>
 
-    <!-- Compétences fonctionnelles -->
     <div class="section">
-      <div class="section-title">Compétences fonctionnelles principales</div>
+      <div class="section-title">Core Functional Skills</div>
       <div class="func-skills">
-        <div class="func-skill-item">Développement Back End et Front End (web &amp; mobile)</div>
-        <div class="func-skill-item">Leadership technique &amp; montée en compétences</div>
-        <div class="func-skill-item">Architecture logicielle et conception</div>
-        <div class="func-skill-item">Delivery Agile / Scrum Master</div>
-        <div class="func-skill-item">Conteneurisation et déploiement (DevOps)</div>
-        <div class="func-skill-item">Rédaction de documentation technique et fonctionnelle</div>
+        <div class="func-skill-item">Back End and Front End development (web &amp; mobile)</div>
+        <div class="func-skill-item">Technical leadership &amp; team upskilling</div>
+        <div class="func-skill-item">Software architecture and design</div>
+        <div class="func-skill-item">Agile Delivery / Scrum Master</div>
+        <div class="func-skill-item">Containerisation and deployment (DevOps)</div>
+        <div class="func-skill-item">Technical and functional documentation</div>
       </div>
-      <div class="methodologies"><strong>Méthodologies :</strong> Scrum, DevOps, CI/CD</div>
+      <div class="methodologies"><strong>Methodologies:</strong> Scrum, DevOps, CI/CD</div>
     </div>
 
-    <!-- Compétences techniques -->
     <div class="section">
-      <div class="section-title">Compétences techniques</div>
+      <div class="section-title">Technical Skills</div>
       <div class="tech-grid">
         <div>
-          <div class="tech-col-title">Systèmes</div>
+          <div class="tech-col-title">Systems</div>
           <div class="tech-col-content">Linux<br>MacOS<br>Windows</div>
         </div>
         <div>
-          <div class="tech-col-title">Langages &amp; Frameworks</div>
+          <div class="tech-col-title">Languages &amp; Frameworks</div>
           <div class="tech-col-content">
             Java 8→25, Kotlin, Ktor<br>
             Spring / Spring Boot, Jakarta EE, Vaadin<br>
             Angular, VueJS, Vuetify, TypeScript<br>
             Bootstrap, Bash / Cron, Python<br>
-            <span class="tech-legacy">PHP5 (maintenance legacy)</span>
+            <span class="tech-legacy">PHP5 (legacy maintenance)</span>
           </div>
         </div>
         <div>
-          <div class="tech-col-title">Bases de données</div>
+          <div class="tech-col-title">Databases</div>
           <div class="tech-col-content">PostgreSQL<br>MongoDB<br>Oracle</div>
         </div>
         <div>
-          <div class="tech-col-title">DevOps &amp; Outils</div>
+          <div class="tech-col-title">DevOps &amp; Tools</div>
           <div class="tech-col-content">
             <strong>Kafka</strong> (event streaming)<br>
             Docker, Kubernetes, OpenShift<br>
@@ -407,60 +387,57 @@
       </div>
     </div>
 
-    <!-- Projets personnels -->
     <div class="section">
       <div class="projects-box">
-        <div class="projects-box-title">Projets personnels</div>
+        <div class="projects-box-title">Personal Projects</div>
         <div class="projects-box-content">
-          <strong>Knido.fr</strong> <span style="color:#94a3b8; font-size:9pt;">(en production)</span>
+          <strong>Knido.fr</strong> <span style="color:#94a3b8; font-size:9pt;">(live)</span>
           &nbsp;&nbsp;·&nbsp;&nbsp; Java &nbsp;/&nbsp; Kotlin &nbsp;/&nbsp; Ktor &nbsp;&nbsp;·&nbsp;&nbsp; Angular &nbsp;&nbsp;·&nbsp;&nbsp; VueJS &nbsp;&nbsp;·&nbsp;&nbsp; Next.js
         </div>
       </div>
     </div>
 
-    <!-- Formations & Certifications -->
     <div class="section">
-      <div class="section-title">Formations &amp; Certifications</div>
+      <div class="section-title">Education &amp; Certifications</div>
       <div class="formation-list">
         <div class="formation-item">
           <span class="formation-year">2020</span>
-          <span class="formation-title">Certification DevOps Foundation</span>
+          <span class="formation-title">DevOps Foundation Certification</span>
         </div>
         <div class="formation-item">
           <span class="formation-year">2020</span>
-          <span class="formation-title">Certification Scrum Master I</span>
+          <span class="formation-title">Scrum Master I Certification</span>
         </div>
         <div class="formation-item">
           <span class="formation-year">2016 – 2018</span>
-          <span class="formation-title">Master 1 : Responsable en Ingénierie des Logiciels</span>
+          <span class="formation-title">Master's Degree: Software Engineering Management</span>
         </div>
         <div class="formation-item">
           <span class="formation-year">2013 – 2015</span>
-          <span class="formation-title">BTS : Informatique et Réseau pour l'Industrie et les Services Techniques</span>
+          <span class="formation-title">HND: Computer Science and Networking for Industry</span>
         </div>
         <div class="formation-item">
           <span class="formation-year">2013</span>
-          <span class="formation-title">Bac : STI2D — Système Information Numérique</span>
+          <span class="formation-title">High School Diploma: STI2D — Digital Information Systems</span>
         </div>
       </div>
     </div>
 
-    <!-- Langues -->
     <div class="section">
-      <div class="section-title">Langues</div>
+      <div class="section-title">Languages</div>
       <div class="langues">
-        Français <span class="lang-level">(Maternel)</span>
+        French <span class="lang-level">(Native)</span>
         &nbsp;&nbsp;·&nbsp;&nbsp;
-        Anglais <span class="lang-level">(Professionnel)</span>
+        English <span class="lang-level">(Professional)</span>
       </div>
     </div>
 
   </div>
-</div><!-- /page 1 -->
+</div>
 
 
 <!-- ══════════════════════════════════════════════════════
-     PAGE 2 — DATARAXYS / NUAMOUV (2024–2025)
+     PAGE 2 — DATARAXYS / NUAMOUV (2025)
 ══════════════════════════════════════════════════════ -->
 <div class="page">
 
@@ -468,41 +445,40 @@
     <div class="exp-header-ala">ALA</div>
     <div class="exp-header-client">Dataraxys / Nuamouv</div>
     <div class="exp-header-role">
-      Tech Lead Fullstack
+      Fullstack Tech Lead
       <span class="sep">·</span>
-      avril 2025 → déc. 2025
+      Apr. 2025 → Dec. 2025
       <span class="sep">·</span>
-      8 mois
+      8 months
     </div>
   </div>
 
   <div class="exp-content">
 
     <div class="section">
-      <div class="section-title">Projet</div>
+      <div class="section-title">Project</div>
       <p style="font-size:10pt; color:#334155; line-height:1.65;">
-        Retour en tant que salarié chez Dataraxys à partir d'avril 2025. Prise en charge du périmètre
-        technique des nouveaux clients Nuamouv (transport urbain) ainsi que de la maison mère Prêt à Partir.
-        Développement, maintenance et livraison de nouvelles solutions, accompagnement de l'équipe et
-        pilotage de la qualité.
+        Rejoined Dataraxys as a full-time employee from April 2025. Took ownership of the technical scope
+        for new Nuamouv clients (urban transport) as well as the parent company Prêt à Partir.
+        Development, maintenance and delivery of new solutions, team coaching and quality oversight.
       </p>
     </div>
 
     <div class="section">
-      <div class="section-title">Réalisations</div>
+      <div class="section-title">Achievements</div>
       <ul class="realisations-list">
-        <li>Livré <strong>4 clients</strong> avec une billettique complète : tunnel de vente, suivi usager temps réel, cartes QR code, profil de suivi</li>
-        <li>Migré l'ensemble du parc applicatif de <strong>Java 11 → Java 25</strong></li>
-        <li>Conçu et déployé un <strong>outil de signature mail</strong> pour +1 000 collaborateurs du groupe</li>
-        <li>Accompagné et fait monter en compétences le Tech Lead Fullstack de l'équipe</li>
-        <li>Suivi des livraisons sur 3 environnements : Dev / Recette / Pré-prod</li>
-        <li>Développements Back End et Front End sur l'ensemble des projets</li>
-        <li>Suivi et garantie de la qualité des livrables produits</li>
+        <li>Delivered full ticketing solutions for <strong>4 clients</strong>: sales funnel, real-time user tracking, QR code cards, user profile</li>
+        <li>Migrated the entire application stack from <strong>Java 11 → Java 25</strong></li>
+        <li>Designed and deployed an <strong>email signature tool</strong> for 1,000+ group employees</li>
+        <li>Mentored and upskilled the team's Fullstack Tech Lead</li>
+        <li>Managed deliveries across 3 environments: Dev / QA / Pre-prod</li>
+        <li>Back End and Front End development across all projects</li>
+        <li>Monitoring and ensuring the quality of delivered products</li>
       </ul>
     </div>
 
     <div class="section">
-      <div class="section-title">Environnement technique</div>
+      <div class="section-title">Technical Environment</div>
       <div class="tags-container">
         <span class="tag">Java / Jakarta EE</span>
         <span class="tag">VueJS</span>
@@ -523,21 +499,21 @@
 
     <div class="exp-meta">
       <div>
-        <div class="exp-meta-label">Équipe</div>
-        <div class="exp-meta-value">2 Tech Lead &nbsp;·&nbsp; 3 Développeurs Senior &nbsp;·&nbsp; 2 Développeurs</div>
+        <div class="exp-meta-label">Team</div>
+        <div class="exp-meta-value">2 Tech Leads &nbsp;·&nbsp; 3 Senior Developers &nbsp;·&nbsp; 2 Developers</div>
       </div>
       <div>
-        <div class="exp-meta-label">Durée</div>
-        <div class="exp-meta-value">8 mois (avril 2025 → déc. 2025)</div>
+        <div class="exp-meta-label">Duration</div>
+        <div class="exp-meta-value">8 months (Apr. 2025 → Dec. 2025)</div>
       </div>
     </div>
 
   </div>
-</div><!-- /page 2 -->
+</div>
 
 
 <!-- ══════════════════════════════════════════════════════
-     PAGE 3 — ALLIANCE4U (CONSOLIDÉ)
+     PAGE 3 — ALLIANCE4U (CONSOLIDATED)
 ══════════════════════════════════════════════════════ -->
 <div class="page">
 
@@ -545,27 +521,27 @@
     <div class="exp-header-ala">ALA</div>
     <div class="exp-header-client">Alliance4U — Consultant</div>
     <div class="exp-header-role">
-      Développeur &amp; Tech Lead Fullstack
+      Developer &amp; Fullstack Tech Lead
       <span class="sep">·</span>
-      juin 2019 → avril 2025
+      Jun. 2019 → Apr. 2025
       <span class="sep">·</span>
-      5 ans 10 mois
+      5 yrs 10 months
     </div>
   </div>
 
   <div class="exp-content">
 
     <div class="a4u-intro">
-      Missions de conseil en régie chez des clients grands comptes. Progression du rôle de Développeur
-      Fullstack vers Tech Lead, avec double casquette <strong>Tech Lead + Scrum Master</strong> sur l'une
-      des missions. Secteurs couverts : transport, retail, santé publique, aéronautique, agriculture, énergie.
+      Consulting assignments in client environments at major accounts. Progression from Fullstack Developer
+      to Tech Lead, with a dual <strong>Tech Lead + Scrum Master</strong> role on one mission.
+      Sectors covered: transport, retail, public health, aeronautics, agriculture, energy.
     </div>
 
-    <!-- Dataraxys A4U (dernière mission, transition) -->
+    <!-- Dataraxys transition -->
     <div class="mission-block">
       <div class="mission-client">Dataraxys / Nuamouv</div>
-      <div class="mission-meta">Tech Lead Fullstack &nbsp;·&nbsp; mars 2024 → avril 2025 &nbsp;·&nbsp; 13 mois &nbsp;·&nbsp; <em>dernière mission — transition vers embauche directe</em></div>
-      <div class="mission-desc">Mission de transition précédant le retour en tant que salarié direct chez Dataraxys. Reprise du périmètre technique Nuamouv (transport urbain).</div>
+      <div class="mission-meta">Fullstack Tech Lead &nbsp;·&nbsp; Mar. 2024 → Apr. 2025 &nbsp;·&nbsp; 13 months &nbsp;·&nbsp; <em>last mission — transition to direct hire</em></div>
+      <div class="mission-desc">Transition mission prior to rejoining Dataraxys as a direct employee. Taking over the Nuamouv (urban transport) technical scope.</div>
       <div class="tags-container">
         <span class="tag">Java / Jakarta EE</span><span class="tag">VueJS</span><span class="tag">SQL / NoSQL</span>
         <span class="tag">Portainer (Docker)</span><span class="tag">Nginx</span><span class="tag">GitLab</span>
@@ -575,11 +551,11 @@
     <!-- Lafayette -->
     <div class="mission-block">
       <div class="mission-client">Pharmacies Lafayette</div>
-      <div class="mission-meta">Tech Lead Fullstack &nbsp;·&nbsp; sept. 2023 → fév. 2024 &nbsp;·&nbsp; 6 mois</div>
-      <div class="mission-desc">Reprise d'un projet non fonctionnel (éléments de production absents du gestionnaire de version) : remise en état, nouveaux développements et livraisons.</div>
+      <div class="mission-meta">Fullstack Tech Lead &nbsp;·&nbsp; Sep. 2023 → Feb. 2024 &nbsp;·&nbsp; 6 months</div>
+      <div class="mission-desc">Taking over a non-functional project (production elements absent from version control): full restoration, new developments and deliveries.</div>
       <ul class="realisations-list">
-        <li>Audit et remise en état complète du projet</li>
-        <li>Suivi des livraisons sur 2 environnements Recette / Pré-prod</li>
+        <li>Full project audit and restoration</li>
+        <li>Managed deliveries across 2 environments: QA / Pre-prod</li>
       </ul>
       <div class="tags-container">
         <span class="tag">.NET</span><span class="tag">AngularJS</span><span class="tag">PostgreSQL</span>
@@ -590,13 +566,13 @@
     <!-- CNAM -->
     <div class="mission-block">
       <div class="mission-client">CNAM — Mon Espace Santé</div>
-      <div class="mission-meta">Tech Lead Fullstack &amp; Scrum Master &nbsp;·&nbsp; août 2022 → août 2023 &nbsp;·&nbsp; 1 an</div>
-      <div class="mission-desc">Développement de la messagerie sécurisée de Mon Espace Santé permettant aux professionnels de santé de converser avec leurs patients.</div>
+      <div class="mission-meta">Fullstack Tech Lead &amp; Scrum Master &nbsp;·&nbsp; Aug. 2022 → Aug. 2023 &nbsp;·&nbsp; 1 year</div>
+      <div class="mission-desc">Development of the secure messaging feature of Mon Espace Santé, enabling healthcare professionals to communicate with their patients.</div>
       <ul class="realisations-list">
-        <li>Animation des cérémonies Scrum pour une équipe de 15 personnes (1 SM, 1 BA, 1 PO, 2 TL, 7 Dev, 2 alternants)</li>
-        <li>Montée en compétences de l'équipe TL Fullstack et des alternants</li>
-        <li>Mise à niveau qualité : bonnes pratiques, Sonar, couverture de tests</li>
-        <li>Livraisons sur 3 environnements Dev / Recette / Pré-prod</li>
+        <li>Facilitated Scrum ceremonies for a 15-person team (1 SM, 1 BA, 1 PO, 2 TL, 7 Dev, 2 apprentices)</li>
+        <li>Upskilled the Fullstack TL team and apprentices</li>
+        <li>Code quality improvement: best practices, Sonar, test coverage</li>
+        <li>Deliveries across 3 environments: Dev / QA / Pre-prod</li>
       </ul>
       <div class="tags-container">
         <span class="tag">Java</span><span class="tag">Spring</span><span class="tag">VueJS</span>
@@ -607,11 +583,11 @@
     </div>
 
   </div>
-</div><!-- /page 3 -->
+</div>
 
 
 <!-- ══════════════════════════════════════════════════════
-     PAGE 4 — ALLIANCE4U (suite)
+     PAGE 4 — ALLIANCE4U (continued)
 ══════════════════════════════════════════════════════ -->
 <div class="page">
 
@@ -619,11 +595,11 @@
     <div class="suite-header-label">ALA</div>
     <div class="suite-header-client">Alliance4U — Consultant</div>
     <div class="suite-header-period">
-      Développeur &amp; Tech Lead Fullstack
+      Developer &amp; Fullstack Tech Lead
       <span class="sep">·</span>
-      juin 2019 → avril 2025
+      Jun. 2019 → Apr. 2025
       <span class="sep">·</span>
-      suite
+      continued
     </div>
   </div>
 
@@ -632,11 +608,11 @@
     <!-- Airbus -->
     <div class="mission-block">
       <div class="mission-client">Airbus</div>
-      <div class="mission-meta">Tech Lead Fullstack &nbsp;·&nbsp; jan. 2022 → août 2022 &nbsp;·&nbsp; 7 mois</div>
-      <div class="mission-desc">Développement et maintenance d'un client lourd de planification de flotte aérienne.</div>
+      <div class="mission-meta">Fullstack Tech Lead &nbsp;·&nbsp; Jan. 2022 → Aug. 2022 &nbsp;·&nbsp; 7 months</div>
+      <div class="mission-desc">Development and maintenance of a thick client for aircraft fleet scheduling.</div>
       <ul class="realisations-list">
-        <li>Coordination et création de tâches avec des équipes anglophones</li>
-        <li>Montée en compétences d'un Tech Lead Fullstack Junior</li>
+        <li>Task coordination and creation with English-speaking teams</li>
+        <li>Mentoring of a Junior Fullstack Tech Lead</li>
       </ul>
       <div class="tags-container">
         <span class="tag">Java</span><span class="tag">Spring</span><span class="tag">Swing</span>
@@ -647,12 +623,12 @@
 
     <!-- Agriculture -->
     <div class="mission-block">
-      <div class="mission-client">Ministère de l'Agriculture</div>
-      <div class="mission-meta">Consultant Développeur Fullstack &nbsp;·&nbsp; mars 2021 → déc. 2021 &nbsp;·&nbsp; 7 mois</div>
-      <div class="mission-desc">Site de gestion pour la pêche professionnelle et loisir.</div>
+      <div class="mission-client">Ministry of Agriculture</div>
+      <div class="mission-meta">Fullstack Developer Consultant &nbsp;·&nbsp; Mar. 2021 → Dec. 2021 &nbsp;·&nbsp; 7 months</div>
+      <div class="mission-desc">Management website for professional and leisure fishing.</div>
       <ul class="realisations-list">
-        <li>Rédaction de plans de test et développement par lots</li>
-        <li>Qualité code : vérification Sonar et tests croisés</li>
+        <li>Test plan writing and batch development</li>
+        <li>Code quality: Sonar verification and cross-testing</li>
       </ul>
       <div class="tags-container">
         <span class="tag">Java / SpringBoot</span><span class="tag">Framework ORION</span>
@@ -664,12 +640,12 @@
     <!-- EDF -->
     <div class="mission-block">
       <div class="mission-client">EDF</div>
-      <div class="mission-meta">Consultant Développeur Fullstack &nbsp;·&nbsp; juin 2019 → jan. 2020 &nbsp;·&nbsp; 7 mois</div>
-      <div class="mission-desc">Supervision des applications EDF pour le marché affaire.</div>
+      <div class="mission-meta">Fullstack Developer Consultant &nbsp;·&nbsp; Jun. 2019 → Jan. 2020 &nbsp;·&nbsp; 7 months</div>
+      <div class="mission-desc">Supervision of EDF applications for the business market.</div>
       <ul class="realisations-list">
-        <li>Conception et livraison de librairies partagées adoptées par les équipes EDF</li>
-        <li>Développement du site de supervision des applications</li>
-        <li>Formations et réunions pour l'implémentation des librairies</li>
+        <li>Design and delivery of shared libraries adopted by EDF teams</li>
+        <li>Development of the application supervision website</li>
+        <li>Training sessions and meetings for library implementation</li>
       </ul>
       <div class="tags-container">
         <span class="tag">Java</span><span class="tag">VueJS / Vuetify</span><span class="tag">Angular</span>
@@ -680,7 +656,7 @@
     </div>
 
   </div>
-</div><!-- /page 4 -->
+</div>
 
 
 <!-- ══════════════════════════════════════════════════════
@@ -692,40 +668,40 @@
     <div class="exp-header-ala">ALA</div>
     <div class="exp-header-client">Dataraxys / Nuamouv</div>
     <div class="exp-header-role">
-      Développeur Fullstack
+      Fullstack Developer
       <span class="sep">·</span>
-      fév. 2016 → juin 2019
+      Feb. 2016 → Jun. 2019
       <span class="sep">·</span>
-      3 ans
+      3 years
     </div>
   </div>
 
   <div class="exp-content">
 
     <div class="section">
-      <div class="section-title">Projet</div>
+      <div class="section-title">Project</div>
       <p style="font-size:10pt; color:#334155; line-height:1.65;">
-        Développement de solutions internes et externes pour le groupe Prêt à Partir. Première expérience
-        professionnelle dans une startup à taille humaine, de la conception jusqu'à la mise en production —
-        couvrant l'intégralité du périmètre métier : transport, voyage, thalasso, vente en ligne.
+        Development of internal and external solutions for the Prêt à Partir group. First professional
+        experience in a human-scale startup, from design to production — covering the full business scope:
+        transport, travel, thalasso, online sales.
       </p>
     </div>
 
     <div class="section">
-      <div class="section-title">Réalisations</div>
+      <div class="section-title">Achievements</div>
       <ul class="realisations-list">
-        <li>Mise en place de projets internes de A à Z : solution RH (Java/Vaadin – MongoDB), parrainage voyage &amp; thalasso (Java/Jakarta EE – Webservice)</li>
-        <li>Optimisation des projets existants : transport, voyage, thalasso, vente en ligne</li>
-        <li>Migration de l'ensemble de l'infrastructure vers Docker</li>
-        <li>Gestion des configurations : variables globales, multi-environnements, gestion des versions</li>
-        <li>Configuration d'équipements Android et livraison au client</li>
-        <li>Présentation et formation auprès de clients</li>
-        <li>Création et surveillance des dépôts Git + suivi qualité du code</li>
+        <li>Built internal projects end-to-end: HR solution (Java/Vaadin – MongoDB), travel &amp; thalasso referral (Java/Jakarta EE – Webservice)</li>
+        <li>Optimised existing projects: transport, travel, thalasso, online sales</li>
+        <li>Migrated the entire infrastructure to Docker</li>
+        <li>Configuration management: global variables, multi-environment, version control</li>
+        <li>Android device configuration and client delivery</li>
+        <li>Client presentations and training sessions</li>
+        <li>Created and monitored Git repositories + code quality oversight</li>
       </ul>
     </div>
 
     <div class="section">
-      <div class="section-title">Environnement technique</div>
+      <div class="section-title">Technical Environment</div>
       <div class="tags-container">
         <span class="tag">Java / Jakarta EE</span>
         <span class="tag">Vaadin</span>
@@ -745,17 +721,17 @@
 
     <div class="exp-meta">
       <div>
-        <div class="exp-meta-label">Équipe</div>
-        <div class="exp-meta-value">2 Tech Lead &nbsp;·&nbsp; 2 Développeurs</div>
+        <div class="exp-meta-label">Team</div>
+        <div class="exp-meta-value">2 Tech Leads &nbsp;·&nbsp; 2 Developers</div>
       </div>
       <div>
-        <div class="exp-meta-label">Durée</div>
-        <div class="exp-meta-value">3 ans (fév. 2016 → juin 2019)</div>
+        <div class="exp-meta-label">Duration</div>
+        <div class="exp-meta-value">3 years (Feb. 2016 → Jun. 2019)</div>
       </div>
     </div>
 
   </div>
-</div><!-- /page 4 -->
+</div>
 
 </body>
 </html>
