@@ -331,4 +331,18 @@
   .separator {
     display: none;
   }
+
+  .photo,
+  .photo-wrapper {
+    width: 140px !important;
+    height: 140px !important;
+  }
+
+  .scroll-hint {
+    display: none;
+  }
+
+  .hero-container {
+    gap: 0.75rem;
+  }
 }

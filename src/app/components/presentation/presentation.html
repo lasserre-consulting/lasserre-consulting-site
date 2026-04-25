@@ -1,4 +1,4 @@
-<section class="hero">
+<section class="hero" aria-labelledby="hero-name">
 
   <!-- Animated background particles -->
   <div class="particles">
@@ -93,16 +93,17 @@
     </svg>
 
     <!-- Name -->
-    <h1 class="hero-name">{{ name }}</h1>
+    <h1 id="hero-name" class="hero-name">{{ name }}</h1>
 
     <!-- Photo -->
     <div class="photo-wrapper">
       <div class="photo-ring"></div>
       <img
         ngSrc="/images/profil.png"
-        alt="Arnaud Lasserre"
-        height="220"
-        width="220"
+        alt=""
+        role="presentation"
+        height="180"
+        width="180"
         class="photo"
         priority>
       <div class="photo-glow"></div>
@@ -141,7 +142,7 @@
       </a>
       <a [href]="pdfHref"
          target="_blank"
-         rel="noopener"
+         rel="noopener noreferrer"
          class="cta-pdf">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
              stroke-linecap="round" stroke-linejoin="round">

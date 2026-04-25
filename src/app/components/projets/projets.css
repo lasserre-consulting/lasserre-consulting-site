@@ -40,7 +40,7 @@
   font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #7c3aed;
+  color: #a78bfa;
   background: rgba(124, 58, 237, 0.1);
   border: 1px solid rgba(124, 58, 237, 0.25);
   padding: 0.3rem 1rem;
@@ -90,6 +90,20 @@
 
 .card:hover .card-glow {
   opacity: 1;
+}
+
+/* Linked card variant */
+.card--linked {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.card--linked:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.4);
+  border-color: color-mix(in srgb, var(--accent) 50%, transparent);
 }
 
 /* Glow blob bottom-right */

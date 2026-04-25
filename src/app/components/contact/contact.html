@@ -1,4 +1,4 @@
-<section id="contact" class="contact-section">
+<section id="contact" class="contact-section" aria-labelledby="contact-title">
 
   <!-- Decorative background blobs -->
   <div class="blob blob--1"></div>
@@ -10,7 +10,7 @@
     <span class="contact-badge" i18n="@@contact.badge">Contact</span>
 
     <!-- Title -->
-    <h2 class="contact-title" i18n="@@contact.title">Travaillons ensemble</h2>
+    <h2 id="contact-title" class="contact-title" i18n="@@contact.title">Travaillons ensemble</h2>
     <p class="contact-subtitle" i18n="@@contact.subtitle">
       Disponible pour missions longue durée.<br>
       Réponse sous <strong>24h</strong>.
@@ -40,6 +40,9 @@
           {{ labelCopy }}
         }
       </button>
+      <span class="sr-only" role="status" aria-live="polite">
+        @if (copied) { {{ labelCopied }} }
+      </span>
     </div>
 
     <!-- Divider -->

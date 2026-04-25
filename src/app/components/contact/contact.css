@@ -180,7 +180,7 @@
 
 .divider-text {
   font-size: 0.78rem;
-  color: #475569;
+  color: #94a3b8;
   white-space: nowrap;
   letter-spacing: 0.05em;
 }
@@ -258,12 +258,12 @@
 
 .social-handle {
   font-size: 0.78rem;
-  color: #475569;
+  color: #94a3b8;
 }
 
 .social-arrow {
   width: 18px; height: 18px;
-  color: #334155;
+  color: #64748b;
   transition: color 0.2s ease, transform 0.2s ease;
 }
 
@@ -276,7 +276,7 @@
 .contact-note {
   margin-top: 2.5rem;
   font-size: 0.78rem;
-  color: #334155;
+  color: #64748b;
 }
 
 /* ── Responsive ── */

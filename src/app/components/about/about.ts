@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { SafeHtmlPipe } from '../../shared/safe-html.pipe';
+import { ScrollRevealDirective } from '../../shared/scroll-reveal.directive';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [SafeHtmlPipe],
+  imports: [SafeHtmlPipe, ScrollRevealDirective],
   templateUrl: './about.html',
   styleUrl: './about.css'
 })

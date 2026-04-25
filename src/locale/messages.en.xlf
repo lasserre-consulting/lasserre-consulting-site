@@ -199,8 +199,8 @@
         <target>Freelance Consultant</target>
       </trans-unit>
       <trans-unit id="presentation.description" datatype="html">
-        <source>Freelance senior. J&apos;interviens sur vos projets Java / Angular en tant que développeur ou Tech Lead — architecture, qualité de code, delivery. 10 ans d&apos;expérience.</source>
-        <target>Senior freelance. I work on your Java / Angular projects as a developer or Tech Lead — architecture, code quality, delivery. 10 years of experience.</target>
+        <source>Freelance senior basé à Toulouse. J&apos;interviens sur vos projets Java / Angular en tant que développeur ou Tech Lead — architecture, qualité de code, delivery. Créateur d&apos;Entrevia. 10 ans d&apos;expérience.</source>
+        <target>Senior freelance based in Toulouse. I work on your Java / Angular projects as a developer or Tech Lead — architecture, code quality, delivery. Creator of Entrevia. 10 years of experience.</target>
       </trans-unit>
       <trans-unit id="projets.badge" datatype="html">
         <source>Réalisations</source>
@@ -257,6 +257,58 @@
       <trans-unit id="stack.category.ai" datatype="html">
         <source>IA &amp; Outillage</source>
         <target>AI &amp; Tooling</target>
+      </trans-unit>
+      <trans-unit id="profil.badge" datatype="html">
+        <source>Profil</source>
+        <target>Profile</target>
+      </trans-unit>
+      <trans-unit id="profil.roles" datatype="html">
+        <source>Consultant Fullstack Senior · Tech Lead · Freelance</source>
+        <target>Senior Fullstack Developer · Tech Lead · Freelance</target>
+      </trans-unit>
+      <trans-unit id="profil.location" datatype="html">
+        <source>Toulouse · Remote</source>
+        <target>Toulouse · Remote</target>
+      </trans-unit>
+      <trans-unit id="profil.bio" datatype="html">
+        <source>10 ans de code, une conviction : les meilleurs projets naissent d&apos;une vraie relation de confiance. J&apos;interviens en missions longue durée là où la technique rencontre les enjeux métier.</source>
+        <target>10 years of code, one conviction: the best projects are built on trust. I take on long-term contracts where technical depth meets product thinking.</target>
+      </trans-unit>
+      <trans-unit id="profil.cta.malt" datatype="html">
+        <source>Malt</source>
+        <target>Malt</target>
+      </trans-unit>
+      <trans-unit id="profil.cta.pdf" datatype="html">
+        <source>Dossier de compétences</source>
+        <target>Skills profile</target>
+      </trans-unit>
+      <trans-unit id="about.statement" datatype="html">
+        <source>Je crois que la qualité d&apos;un livrable tient d&apos;abord à la clarté des échanges. Pas de zone grise, pas de fausse estimation — juste un interlocuteur technique fiable qui s&apos;adapte au contexte et s&apos;implique dans la réussite du projet.</source>
+        <target>I believe delivery quality starts with clear communication. No grey areas, no wishful estimates — just a reliable technical partner who adapts to your context and is committed to the success of your project.</target>
+      </trans-unit>
+      <trans-unit id="projets.entrevia.desc" datatype="html">
+        <source>Plateforme de préparation aux entretiens techniques pour développeurs. Flashcards en répétition espacée, simulation d&apos;entretien, scoring IA et 100+ stacks couvertes (Java, Angular, React, Kotlin, DevOps, IA…).</source>
+        <target>Technical interview preparation platform for developers. Spaced-repetition flashcards, mock interview simulation, AI scoring and 100+ stacks covered (Java, Angular, React, Kotlin, DevOps, AI…).</target>
+      </trans-unit>
+      <trans-unit id="app.skip" datatype="html">
+        <source>Aller au contenu</source>
+        <target>Skip to content</target>
+      </trans-unit>
+      <trans-unit id="app.lang.nav" datatype="html">
+        <source>Sélecteur de langue</source>
+        <target>Language selector</target>
+      </trans-unit>
+      <trans-unit id="projets.entrevia.ariaLabel" datatype="html">
+        <source>Entrevia — ouvre dans un nouvel onglet</source>
+        <target>Entrevia — opens in a new tab</target>
+      </trans-unit>
+      <trans-unit id="a11y.toggle.aria" datatype="html">
+        <source>Mode accessibilité visuelle</source>
+        <target>Visual accessibility mode</target>
+      </trans-unit>
+      <trans-unit id="a11y.toggle.label" datatype="html">
+        <source>Accessibilité</source>
+        <target>Accessibility</target>
       </trans-unit>
     </body>
   </file>

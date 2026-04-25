@@ -10,7 +10,14 @@ import { ScrollRevealDirective } from '../../shared/scroll-reveal.directive';
 })
 export class Projets {
 
-  projets = [
+  projets: { color: string; title: string; url?: string; description: string; tags: string[] }[] = [
+    {
+      color: '#2563eb',
+      title: 'Entrevia',
+      url: 'https://entrevia.dev',
+      description: $localize`:@@projets.entrevia.desc:Plateforme de préparation aux entretiens techniques pour développeurs. Flashcards en répétition espacée, simulation d'entretien, scoring IA et 100+ stacks couvertes (Java, Angular, React, Kotlin, DevOps, IA…).`,
+      tags: ['Next.js', 'TypeScript', 'PostgreSQL', 'IA', 'SaaS'],
+    },
     {
       color: '#2563eb',
       title: 'Mission Tracker',

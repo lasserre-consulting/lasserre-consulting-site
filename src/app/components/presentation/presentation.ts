@@ -22,7 +22,7 @@ export default class Presentation {
     $localize`:@@presentation.role.freelance:Consultant Freelance`,
   ];
 
-  description = $localize`:@@presentation.description:Freelance senior. J'interviens sur vos projets Java / Angular en tant que développeur ou Tech Lead — architecture, qualité de code, delivery. 10 ans d'expérience.`;
+  description = $localize`:@@presentation.description:Freelance senior basé à Toulouse. J'interviens sur vos projets Java / Angular en tant que développeur ou Tech Lead — architecture, qualité de code, delivery. Créateur d'Entrevia. 10 ans d'expérience.`;
 
   particles = Array.from({ length: 40 }, () => ({
     style: `
