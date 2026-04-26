@@ -21,20 +21,16 @@ export class Projets {
     {
       color: '#2563eb',
       title: 'Mission Tracker',
+      url: 'https://lasserre-consulting.fr/mission-tracker/',
       description: $localize`:@@projets.mission.desc:Agrégateur de missions freelance scraping 24 plateformes en temps réel. Centralise les offres, dédoublonne et présente un flux unifié de missions.`,
       tags: ['Kotlin', 'Ktor', 'Angular', 'PostgreSQL'],
     },
     {
       color: '#7c3aed',
       title: "Carnet d'Route",
+      url: 'https://www.lasserre-consulting.fr/carnetroute/simulation',
       description: $localize`:@@projets.carnet.desc:Simulateur de trajet multi-motorisations avec streaming temps réel via Kafka. Compare coûts et émissions selon le type de véhicule.`,
       tags: ['Kotlin', 'Ktor', 'Angular', 'Kafka'],
-    },
-    {
-      color: '#059669',
-      title: 'Qualidoc',
-      description: $localize`:@@projets.qualidoc.desc:Plateforme de gestion de documents qualité avec authentification JWT, gestion des rôles et workflow de validation documentaire.`,
-      tags: ['Spring Boot', 'Angular', 'PostgreSQL'],
     },
   ];
 }

@@ -4,7 +4,6 @@ import { Expertise } from '../../components/expertise/expertise';
 import { Projets } from '../../components/projets/projets';
 import { Stack } from '../../components/stack/stack';
 import { About } from '../../components/about/about';
-import { Profil } from '../../components/profil/profil';
 import { Contact } from '../../components/contact/contact';
 import { A11yToggle } from '../../components/a11y-toggle/a11y-toggle';
 
@@ -17,7 +16,6 @@ import { A11yToggle } from '../../components/a11y-toggle/a11y-toggle';
     Projets,
     Stack,
     About,
-    Profil,
     Contact,
     A11yToggle
   ],
@@ -27,7 +25,6 @@ import { A11yToggle } from '../../components/a11y-toggle/a11y-toggle';
     <app-projets />
     <app-stack />
     <app-about />
-    <app-profil />
     <app-contact />
     <app-a11y-toggle />
   `

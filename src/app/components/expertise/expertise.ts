@@ -38,8 +38,8 @@ export class Expertise {
     {
       index: '03',
       color: '#059669',
-      title: $localize`:@@expertise.agile.title:Agilité & Scrum`,
-      description: $localize`:@@expertise.agile.desc:Delivery structuré et orienté valeur produit. Animation des cérémonies, priorisation du backlog et pilotage par les indicateurs.`,
+      title: $localize`:@@expertise.agile.title:Scrum Master`,
+      description: $localize`:@@expertise.agile.desc:1 an d'expérience Scrum Master certifié (PSM I). Animation des cérémonies, priorisation du backlog, pilotage par les indicateurs et accompagnement de l'équipe vers l'autonomie.`,
       icon: `<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
         <path d="M12 22V12"/>
         <path d="M12 12L4.93 7"/>
@@ -49,7 +49,7 @@ export class Expertise {
         <circle cx="4" cy="7" r="1" fill="currentColor"/>
         <circle cx="20" cy="7" r="1" fill="currentColor"/>
       </svg>`,
-      tags: ['Scrum', 'Kanban', 'Backlog', 'OKR', 'Delivery'],
+      tags: ['Scrum', 'PSM I', 'Kanban', 'Backlog', 'OKR', 'Delivery'],
     },
   ];
 }

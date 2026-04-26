@@ -163,12 +163,12 @@
         <target>Defining technical architecture, facilitating code reviews, upskilling the team and aligning with product goals.</target>
       </trans-unit>
       <trans-unit id="expertise.agile.title" datatype="html">
-        <source>Agilité &amp; Scrum</source>
-        <target>Agility &amp; Scrum</target>
+        <source>Scrum Master</source>
+        <target>Scrum Master</target>
       </trans-unit>
       <trans-unit id="expertise.agile.desc" datatype="html">
-        <source>Delivery structuré et orienté valeur produit. Animation des cérémonies, priorisation du backlog et pilotage par les indicateurs.</source>
-        <target>Structured, value-driven delivery. Facilitating ceremonies, backlog prioritisation and metrics-driven management.</target>
+        <source>1 an d'expérience Scrum Master certifié (PSM I). Animation des cérémonies, priorisation du backlog, pilotage par les indicateurs et accompagnement de l'équipe vers l'autonomie.</source>
+        <target>1 year of certified Scrum Master experience (PSM I). Facilitating ceremonies, backlog prioritisation, metrics-driven management and coaching the team toward autonomy.</target>
       </trans-unit>
       <trans-unit id="presentation.available" datatype="html">
         <source>Disponible pour de nouvelles missions</source>
@@ -211,8 +211,8 @@
         <target>Personal projects</target>
       </trans-unit>
       <trans-unit id="projets.subtitle" datatype="html">
-        <source>Des projets construits pour apprendre, expérimenter et résoudre de vrais problèmes.</source>
-        <target>Projects built to learn, experiment and solve real problems.</target>
+        <source>Des projets construits pour apprendre, expérimenter et résoudre de vrais problèmes. Cliquez sur une carte pour visiter le projet.</source>
+        <target>Projects built to learn, experiment and solve real problems. Click a card to visit the project.</target>
       </trans-unit>
       <trans-unit id="projets.card.badge" datatype="html">
         <source>projet personnel</source>
@@ -225,10 +225,6 @@
       <trans-unit id="projets.carnet.desc" datatype="html">
         <source>Simulateur de trajet multi-motorisations avec streaming temps réel via Kafka. Compare coûts et émissions selon le type de véhicule.</source>
         <target>Multi-powertrain journey simulator with real-time streaming via Kafka. Compares costs and emissions by vehicle type.</target>
-      </trans-unit>
-      <trans-unit id="projets.qualidoc.desc" datatype="html">
-        <source>Plateforme de gestion de documents qualité avec authentification JWT, gestion des rôles et workflow de validation documentaire.</source>
-        <target>Quality document management platform with JWT authentication, role management and document validation workflow.</target>
       </trans-unit>
       <trans-unit id="stack.badge" datatype="html">
         <source>Stack Technique</source>
@@ -297,10 +293,6 @@
       <trans-unit id="app.lang.nav" datatype="html">
         <source>Sélecteur de langue</source>
         <target>Language selector</target>
-      </trans-unit>
-      <trans-unit id="projets.entrevia.ariaLabel" datatype="html">
-        <source>Entrevia — ouvre dans un nouvel onglet</source>
-        <target>Entrevia — opens in a new tab</target>
       </trans-unit>
       <trans-unit id="a11y.toggle.aria" datatype="html">
         <source>Mode accessibilité visuelle</source>

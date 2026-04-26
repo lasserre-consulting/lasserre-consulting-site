@@ -3,7 +3,7 @@
 
     <span class="section-badge" i18n="@@projets.badge">Réalisations</span>
     <h2 id="projets-title" class="section-title" i18n="@@projets.title">Projets personnels</h2>
-    <p class="section-subtitle" i18n="@@projets.subtitle">Des projets construits pour apprendre, expérimenter et résoudre de vrais problèmes.</p>
+    <p class="section-subtitle" i18n="@@projets.subtitle">Des projets construits pour apprendre, expérimenter et résoudre de vrais problèmes. Cliquez sur une carte pour visiter le projet.</p>
 
     <div class="cards">
       @for (projet of projets; track projet.title) {
@@ -15,8 +15,7 @@
             target="_blank"
             rel="noopener noreferrer"
             [style.--accent]="projet.color"
-            aria-label="Entrevia — ouvre dans un nouvel onglet"
-            i18n-aria-label="@@projets.entrevia.ariaLabel">
+            [attr.aria-label]="projet.title + ' — ouvre dans un nouvel onglet'">
 
             <!-- Badge -->
             <span class="projet-badge" i18n="@@projets.card.badge">projet personnel</span>
